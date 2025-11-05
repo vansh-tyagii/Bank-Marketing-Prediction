@@ -14,6 +14,7 @@ joblib
 matplotlib
 seaborn
 plotly
+plotly.express
 shap
 catboost
 uvicorn[standard]
