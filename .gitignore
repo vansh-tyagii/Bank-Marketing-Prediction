@@ -1,0 +1,32 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+
+# Artifacts & Data (NEVER commit these)
+artifacts/
+data/
+data.zip
+catboost_info/
+
+
+*.pkl
+# Logs
+logs/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# Notebook checkpoints
+.ipynb_checkpoints

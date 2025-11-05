@@ -1,0 +1,26 @@
+logging:
+  log_dir: logs/
+  level: INFO
+  log_filename: "running_logs.log"
+  format: "[%(asctime)s] %(levelname)s - %(module)s - %(message)s"
+
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data
+  source_url: "https://archive.ics.uci.edu/ml/machine-learning-databases/00222/bank-additional.zip"
+  local_zip_file: artifacts/data/data.zip
+  unzip_dir: artifacts/data
+  raw_data_file: artifacts/data/bank-additional/bank-additional-full.csv
+  train_data_path: artifacts/data/train.csv
+  test_data_path: artifacts/data/test.csv
+
+data_transformation:
+  root_dir: artifacts
+  preprocessor_obj_file: artifacts/preprocessor.pkl  
+  engineered_train_data_path: artifacts/train_engineered.csv
+  engineered_test_data_path: artifacts/test_engineered.csv
+
+model_trainer:
+  root_dir: artifacts
+  trained_model_file_path: artifacts/model.pkl
